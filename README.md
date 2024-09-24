@@ -1,7 +1,7 @@
 The Bash Command Line
 =====================
 
-![*Tux, the Linux penguin*](tux.png)
+![*Tux, the Linux penguin*](./images/tux.png)
 
 This tutorial makes you familiar with **bash**, the Linux command line. You will learn to:
 
@@ -22,9 +22,9 @@ your system.*
 
 ## Goal
 
-In this tutorial, you will be looking for a word with 22 characters:
+In this tutorial, you will be looking for two words with 22 characters in total:
 
-![](solution.png)
+![](./images/solution.png)
 
 All characters are hidden in the exercises below.
 
@@ -32,9 +32,9 @@ All characters are hidden in the exercises below.
 
 * clone the repository or download the code as a ZIP file
 * locate the  `exercises/` folder
-* open a `bash` terminal
+* open a `bash` terminal inside the folder
 
-![](preparations.png)
+![](./images/preparations.png)
 
 ----
 
@@ -43,7 +43,7 @@ All characters are hidden in the exercises below.
 
 ### 1.1. Navigating directories
 
-The **first character** is hidden in a file somewhere in the *exercise1*
+The **first character** is hidden in a file somewhere in the *exercise_1*
 directory tree. Use the commands
 
 ``` {.sourceCode .bash}
@@ -110,9 +110,9 @@ of the last modification.
 
 To obtain the fourth character look up the file size in the [Table of
 printable ASCII
-characters](https://en.wikipedia.org/wiki/ASCII#Printable_characters):
+characters](https://en.wikipedia.org/wiki/ASCII#Printable_characters) (use the decimal column):
 
-![](ASCII-Table-wide.svg)
+![](./images/ASCII-Table-wide.svg)
 
 *ASCII Table, Public Domain*
 
@@ -140,6 +140,8 @@ its contents, use the command
 less <filename>
 ```
 
+Type 'q' on your keyboard to exit the screen.
+
 ### 2.2. Edit text files
 
 To get **character number six**, you will need to create a text file in
@@ -156,6 +158,8 @@ Create a text file with the characters you have found so far.
 
 The **sixth character** is the one you need to press to save a file in
 `nano`.
+
+*(Hint: It's one of the options at the bottom of your screen).*
 
 <div class="admonition hint">
 
@@ -424,6 +428,9 @@ df --help
 
 The solution is the last character of the first authors' first name.
 
+Note: if your version of `df` does not report author's name,
+just consider `?` as the 18th character in your solution.
+
 ### 6.3. Set an environment variable
 
 To install some programs, it is necessary to set so-called environment
@@ -440,7 +447,7 @@ env
 ```
 
 To obtain the **19th character**, you need to use `export` to set the
-variable *GIVEME* to the value **SOLUTION**.
+variable *GIVEME* to the value **SOLUTION** (i.e. assign the value 'SOLUTION' to the variable name 'GIVEME').
 
 ``` {.sourceCode .bash}
 echo $GIVEME
@@ -467,22 +474,20 @@ hidden file).
 
 The easiest way to check from the Unix command line whether the internet
 connection works, is to send a request to a known server (e.g.
-www.spiced-academy.com) using the command
+www.google.com) using the command
 
 ``` {.sourceCode .bash}
 ping <web address>
 ```
 
 The command reports, how long a message takes back and forth to the
-given server. To interrupt the messages, press Ctrl+C. You can use the
-program
-
-``` {.sourceCode .bash}
-./check_ping
-```
+given server.
 
 The **20th character** is the `ping` option that sets the maximum number
-of requests sent. Check the documentation with:
+of requests sent.of requests sent. In other words, look for the option that will
+stop sending packets after sending a user-defined number.
+
+Check the documentation with:
 
 ``` {.sourceCode .bash}
 man ping
@@ -520,6 +525,10 @@ course, you may only interrupt your own programs, not those owned by
 *root*, the system administrator.
 
 ----
+
+**Congratulations! You've completed the tutorial :)**
+
+Submit the solution (two secret words) back via email.
 
 ### License
 
